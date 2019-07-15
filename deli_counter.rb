@@ -18,7 +18,7 @@ def take_a_number(arr, name)
   arr << name
   arr.each_with_index do |customer, index|
     if customer == arr[name]
-      puts "Welcome, #{name}. You are number #{index +1} in line."
+      puts "Welcome, #{customer}. You are number #{index +1} in line."
     end
   end
 
