@@ -23,3 +23,13 @@ def take_a_number(arr, name)
   end
 
 end
+
+def now_serving(line)
+  if line.length == 0
+    puts "There is nobody waiting to be served!"
+else
+  first_in_line = line.first
+  puts "Currently serving #{first_in_line}."
+  return line.shift
+end
+end
